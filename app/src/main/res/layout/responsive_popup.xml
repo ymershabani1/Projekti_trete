@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_layout_container"
+    android:background="#4CAF50"
+    android:visibility="gone"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_dialog_background_white"
+
+        >
+
+        <TextView
+            android:id="@+id/tvLoginDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option dialog"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            >
+
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ADD"
+            android:textSize="25sp"
+            android:layout_below="@id/tvLoginDialog"
+            android:background="@drawable/rounded_button_background_lightblue">
+
+        </Button>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="UPDATE"
+            android:textSize="25sp"
+            android:layout_below="@id/btnAdd"
+            android:background="@drawable/rounded_button_background_lightorange">
+
+        </Button>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/btnUpdate"
+            android:text="DELETE"
+            android:textSize="25sp"
+            android:background="@drawable/rounded_button_background_lightpink">
+
+        </Button>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

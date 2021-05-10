@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewsListActivity"
+    >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFFFFF"
+        android:dividerHeight="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_popup_2"
+        android:background="@drawable/purple_color_radius"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:clickable="true"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/cry"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Something went wrong!"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textSize="30sp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choose an action"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+
+                />
+            <Button
+                android:id="@+id/btnTry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Try Again"
+                android:background="@drawable/try_again_specs"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <Button
+                android:id="@+id/btnReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Report"
+                android:background="@drawable/report_specs"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.FragmentHolderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/btnFirstFragment"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="FRAG"/>
+            <View
+                android:id="@+id/viewFirstFragmentActive"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#4CAF50"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnSecondFragment"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="MENT"/>
+
+            <View
+                android:id="@+id/viewSecondFragmentActive"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="invisible"
+                android:background="#4CAF50"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+</LinearLayout>
